@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+h1{
+    font-size: 40px;
+    text-shadow: 2px 2px 2px gray;
+}
+.contenedor-padre{
+    box-shadow: 1px 1px 5px gray;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.contenedor-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+input{
+    border-radius: 8px;
+    border-color: #1d3df0be;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    color: rgb(109, 109, 110);
+    font-size: 17px;
+}
+button{
+    font-size: 20px;
+    background-color: #1d3cf0;
+    color: #ffff;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.mostrarUsuarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.padre-map{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+   
+}
+li{
+    
+    list-style: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px gray;
+    width: 300px;
+    border-bottom: 1px solid rgb(10, 57, 212);
+    color: rgb(108, 109, 109);
+}
+ p{
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(108, 109, 109);
+}

@@ -1,0 +1,56 @@
+/*.App{
+    border: 1px solid #000;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;flex-direction: column;
+
+}
+h1{
+    font-size: 70px;
+    text-shadow: 1px 2px rgb(89, 207, 43),2px 2px rgb(139, 139, 139);
+}
+.padre-map{
+    display: flex;
+    
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+}
+.contenedor-padre{
+    box-shadow: 2px 2px 2px gray;
+    width: 70%;
+    background: #00000009;
+
+}
+
+.contenedor-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+input{
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    border-radius: 12px;
+    border-color: #a7a5a5;
+}
+li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 200px;
+    color: rgb(44, 43, 43);
+    box-shadow: 1px 1px 1px gray;
+}
+button{
+    border-radius: 8px;
+    background-color: rgb(4, 39, 240);
+    color: rgb(247, 247, 247);
+    font-size: 18px;
+}*/
