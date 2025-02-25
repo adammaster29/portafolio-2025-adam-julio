@@ -1,56 +1,89 @@
-/*.App{
-    border: 1px solid #000;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;flex-direction: column;
-
-}
-h1{
-    font-size: 70px;
-    text-shadow: 1px 2px rgb(89, 207, 43),2px 2px rgb(139, 139, 139);
-}
-.padre-map{
-    display: flex;
-    
-    justify-content:center;
-    align-items: center;
-    gap: 2rem;
-}
-.contenedor-padre{
-    box-shadow: 2px 2px 2px gray;
-    width: 70%;
-    background: #00000009;
-
-}
-
-.contenedor-input{
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-contenido {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    
+  }
+  .modal-contenido button{
+    background-color: #1d3cf0;
+    color: #ffff;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 200PX; 
+    height: 40px;
+  }
+  
+  @media screen and (max-width: 620px) {
+    .contenedor-padre {
+      width: 100% !important;
+     
+  }
+    input {
+        width: 100%;
+        font-size: 15px !important;
+    }
+
+    .btn-input{
+      font-size: 17px !important;
+      width: 30% !important;
+  }
+  li{
+    font-size: 19px;
+    font-weight: 700;
+    width: 100%;
 }
-input{
-    width: 300px;
-    height: 35px;
-    text-align: center;
-    border-radius: 12px;
-    border-color: #a7a5a5;
+.mostrarUsuarios {
+  justify-content: space-between;
+}
+} 
+@media screen and (max-width: 480px) {
+
+  .btn-input{
+    font-size: 16px !important;
+    width: 50% !important;
 }
 li{
-    list-style: none;
-    font-size: 18px;
-    font-weight: 700;
-    width: 200px;
-    color: rgb(44, 43, 43);
-    box-shadow: 1px 1px 1px gray;
+  font-size: 19px;
+  font-weight: 700;
+  width: 100%;
 }
-button{
-    border-radius: 8px;
-    background-color: rgb(4, 39, 240);
-    color: rgb(247, 247, 247);
-    font-size: 18px;
-}*/
+.mostrarUsuarios {
+justify-content: space-between;
+}
+} 
+
+ 
+
+@media screen and (max-width: 350px) {
+  input {
+      width: 100%;
+      font-size: 15px !important;
+  }
+  li{
+  font-size: 15px !important;
+    font-weight: 700;
+}
+  .btn-input{
+    font-size: 15px !important;
+    width: 40% !important;
+  
+}}

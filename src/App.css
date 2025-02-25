@@ -26,9 +26,8 @@ h1{
 .contenedor-input{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 3rem;
 }
 input{
     border-radius: 8px;
@@ -39,12 +38,30 @@ input{
     color: rgb(109, 109, 110);
     font-size: 17px;
 }
-button{
-    font-size: 20px;
+.btn-input{
+    font-size: 18px;
     background-color: #1d3cf0;
     color: #ffff;
     font-weight: 700;
     border-radius: 5px;
+    width: 200PX;
+    padding: 10px; 
+}
+.modal-contenido button{
+    font-size: 18px;
+}
+button:hover{
+    background-color: #848588;
+    color:#1d3cf0;
+    font-size: 18px;
+}
+.eliminar{
+    color: #ec0707;
+    font-size: 40px;
+}
+.editar{
+    color: #2ee416;
+    font-size: 38px;
 }
 .mostrarUsuarios{
     display: flex;
@@ -59,7 +76,7 @@ button{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-   
+   width: 100%;
 }
 li{
     

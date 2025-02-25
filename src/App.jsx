@@ -2,9 +2,12 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
+//git config --global user.name "TuNombre"
+//git config --global user.email "tuemail@ejemplo.com"
+
 function App() {
   const usuario =  [
-    {id:Date.now(),nombre:'ADAMS AGUDELO'}]
+    {id:Date.now(),nombre:'Adams Agudelo'}]
   const[persona,setPersona] = useState(usuario)
   const[controlInput,setControlInput] = useState('')
   // agregar
@@ -22,13 +25,31 @@ function App() {
       setPersona(persona.filter(personas=> personas.id !== id))
     }
 
-    // editar
-    const editarUsuario = (id) => {
-      const nuevoNombre = prompt('Nuevo nombre:', persona.find(u => u.id === id)?.nombre.toUpperCase());
-      if (nuevoNombre) {
-        setPersona(persona.map(u => (u.id === id ? { ...u, nombre: nuevoNombre } : u)));
-      }
-    };
+    
+  // nuevos estados - editandoId,nombreEditado,mostrarModal
+  const[editandoId,setEditandoId] = useState(null);
+  const[nombreEditado,setNombreEditado] = useState('');
+  const[mostrarModal,setMostrarModal] = useState(false);
+
+     // Mostrar modal con los datos del usuario a editar
+ const abrirModal = (id, nombre) => {
+  setEditandoId(id);
+  setNombreEditado(nombre);
+  setMostrarModal(true);
+ }
+ const guardarEdicion =()=>{
+  const editado = persona.map(u =>u.id === editandoId ? {...u,nombre:nombreEditado}:u)
+  setPersona(editado);
+  setEditandoId(null);
+  setNombreEditado('');
+  setMostrarModal(false);
+ }
+    
+     
+
+
+
+  
 
 
 console.log(controlInput);
@@ -38,7 +59,7 @@ console.log(controlInput);
         <div className="contenedor-padre">
           <div className="contenedor-input">
           <input value={controlInput}  onChange={e => setControlInput(e.target.value)} type="text" placeholder='Escribir Usuario' />
-          <button onClick={agregar}>Agregar</button>
+          <button className='btn-input' onClick={agregar}>Agregar</button>
           </div>
           
          {
@@ -49,15 +70,31 @@ console.log(controlInput);
             {persona.map(usuarios=>(
               <ul key={usuarios.id} className="padre-map">
                 {/* <li>I.D {usuarios.id}</li> */}
-                <li>{usuarios.nombre.toUpperCase()}</li>
-                <button onClick={()=>eliminar(usuarios.id)}>Eliminar</button>
-                <button onClick={() => editarUsuario(usuarios.id)}>✏️</button>
+               <li> {usuarios.nombre}</li>
+                <i className='bx bxs-edit-alt bx-tada bx-rotate-270 editar' onClick={() => abrirModal(usuarios.id, usuarios.nombre)} ></i>
+                <i class='bx bx-x bx-tada bx-rotate-270 eliminar' onClick={()=>eliminar(usuarios.id)} ></i>
+               
               </ul>
 
             ))  }
           </div>
           ):(  <p>no hay usuarios</p> )}
               </div>
+              {/* Modal para editar */}
+      {mostrarModal && (
+        <div className="modal">
+            <h3>Editar Usuario</h3>
+          <div className="modal-contenido">
+            <input
+              value={nombreEditado}
+              onChange={(e) => setNombreEditado(e.target.value)}
+              type="text"
+            />
+            <button  onClick={guardarEdicion}>Guardar</button>
+            <button className='eliminar' onClick={() => setMostrarModal(false)}>Cancelar</button>
+          </div>
+        </div>
+      )}
 
     </div>
   )
