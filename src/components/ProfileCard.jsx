@@ -23,7 +23,7 @@ export default function ProfileCard({cambiarPagina}) {
 
       <div className="buttons">
         <a href="/cv_adam_jimenez.pdf" className="btn" download>Descargar CV</a>
-        <a href="/tarjeta-pro" className="btn secondary">Tarjeta Profesional</a>
+        <a href="https://tramites.copnia.gov.co/Copnia_Microsite/CertificateOfGoodStanding/WaterMarkmethod?CertificateNumber=031132-0750922%20BLV" className="btn secondary">Tarjeta Profesional</a>
         <a href="/tarjeta-pro" className="btn whatsapp ">Whatsapp</a>
         <a onClick={()=>cambiarPagina(2)} className="btn ">ver proyectos</a>
       </div>

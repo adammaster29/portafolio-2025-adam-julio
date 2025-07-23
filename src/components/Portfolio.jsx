@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import ProfileCard from "./ProfileCard";
+import Contact from "./ContactSection";
 const projects = [
   {
     title: "API de Gestión de Usuarios",
@@ -62,11 +63,11 @@ const cambiarPagina = (num)=>{
     <a className="contact-email" href="mailto:adam.backend.dev@gmail.com">
       adam.backend.dev@gmail.com
     </a>
-    <div>
-          <a className="contact-email" onClick={()=>cambiarPagina(3)}>
-      Proyectos front end
-    </a>
-    </div>
+     <div className="nav-buttons">
+  <button onClick={() => cambiarPagina(1)}>Perfil</button>
+  <button onClick={() => cambiarPagina(3)}>frontend</button>
+  <button onClick={() => cambiarPagina(4)}>Contacto</button>
+</div>
   </div>
     </>
       )
@@ -94,16 +95,19 @@ const cambiarPagina = (num)=>{
     <a className="contact-email" href="mailto:adam.backend.dev@gmail.com">
       adam.backend.dev@gmail.com
     </a>
-      <div>
-          <a className="contact-email" onClick={()=>cambiarPagina(1)}>
-      perfil
-    </a>
-       <a className="contact-email" onClick={()=>cambiarPagina(2)}>
-      proyectos backend
-    </a>
-    </div>
+      <div className="nav-buttons">
+  <button onClick={() => cambiarPagina(1)}>Perfil</button>
+  <button onClick={() => cambiarPagina(2)}>Backend</button>
+  <button onClick={() => cambiarPagina(4)}>Contacto</button>
+</div>
+
   </div>
     </>
+      )
+
+      }
+      {paginas === 4 &&(
+        <Contact cambiarPagina={cambiarPagina}/>
       )
 
       }
