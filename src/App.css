@@ -162,6 +162,12 @@ body {
 .info p {
   margin: 0.5rem 0;
 }
+.info a{
+  color: #fff;
+}
+.info a:hover{
+  color: #38a90f;
+}
 
 .socials {
   margin-top: 1rem;
@@ -224,4 +230,19 @@ body {
   background-color: #0f172a; /* más oscuro */
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* seccion frontend */
+.card-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-image {
+  transform: scale(1.02);
 }

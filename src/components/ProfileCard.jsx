@@ -1,5 +1,5 @@
 // import './Profile.css';
-import profileImage from '../assets/img/perfiladam.png'; 
+import profileImage from '/img/perfiladam.png'; 
 
 export default function ProfileCard({cambiarPagina}) {
   return (
@@ -24,7 +24,7 @@ export default function ProfileCard({cambiarPagina}) {
       <div className="buttons">
         <a href="/cv_adam_jimenez.pdf" className="btn" download>Descargar CV</a>
         <a href="https://tramites.copnia.gov.co/Copnia_Microsite/CertificateOfGoodStanding/WaterMarkmethod?CertificateNumber=031132-0750922%20BLV" className="btn secondary">Tarjeta Profesional</a>
-        <a href="/tarjeta-pro" className="btn whatsapp ">Whatsapp</a>
+        <a href="https://wa.me/qr/SFXGN6LCNDNAF1 " className="btn whatsapp " target='_blank'>Whatsapp</a>
         <a onClick={()=>cambiarPagina(2)} className="btn ">ver proyectos</a>
       </div>
     </div>
