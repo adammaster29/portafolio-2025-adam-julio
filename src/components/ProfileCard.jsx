@@ -19,6 +19,7 @@ export default function ProfileCard({cambiarPagina}) {
         <span className='HTML'>HTML</span>
         <span className='Bootstrap'>Bootstrap</span>
         <span className='Postman'>Postman</span>
+        <span className='ingles'>ingles</span>
       </div>
 
       <div className="buttons">
