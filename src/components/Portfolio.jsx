@@ -27,28 +27,28 @@ const fronted = [
     title: "Pokedex - Pokémon",
     description:
       "App con consumo de API de Pokémon, muestra detalles y lista de Pokémon.",
-    link: "https://github.com/adammaster29/pokedex",
+    link: "https://pokedex-group.netlify.app/",
     image: "/img/pokedex.png"
   },
   {
     title: "Clima - Weather App",
     description:
       "App del clima usando API externa. Consulta ciudad y obtiene temperatura.",
-    link: "https://github.com/adammaster29/weather-app",
+    link: "https://wheather-app-adalberto.netlify.app/",
     image: "/img/clima.png"
   },
   {
     title: "Blackjack - Juego 21",
     description:
       "Juego interactivo donde el usuario compite contra la máquina para acercarse a 21.",
-    link: "https://github.com/adammaster29/blackjack",
+    link: "https://adam-blackjack.netlify.app/",
     image: "/img/blackjack.png"
   },
   {
     title: "Trivia -  preguntas",
     description:
       "Juego para adivinar respuestas correctas a preguntas aleatorias.",
-    link: "https://github.com/adammaster29/trivia-game",
+    link: "https://preguntasadam.netlify.app/",
     image: "/img/trivia.png"
   },
 ];
@@ -122,7 +122,7 @@ const cambiarPagina = (num)=>{
         target="_blank"
         rel="noopener noreferrer"
       >
-        Ver en GitHub
+        Ver proyectos
       </a>
     </div>
   ))}
@@ -132,7 +132,7 @@ const cambiarPagina = (num)=>{
   <div className="contact-section">
     <p className="contact-label">¿Interesado en trabajar conmigo?</p>
     <a className="contact-email" href="mailto:adam.developer2025@gmail.com">
-      aadam.developer2025@gmail.com
+      adam.developer2025@gmail.com
     </a>
       <div className="nav-buttons">
   <button onClick={() => cambiarPagina(1)}>Perfil</button>

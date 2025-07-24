@@ -113,10 +113,11 @@ background: #d3b429;
 
 @media screen and (max-width: 768px) {
   .profile-card {
-    width: 95%;
+    width: 90%;
     height: auto;
     padding: 20px;
     margin: 20px auto;
+    /* overflow: hidden; */
   }
 
   .profile-img {
@@ -145,7 +146,7 @@ background: #d3b429;
   }
 
   .buttons .btn {
-    width: 100%;
+    width: 80%;
     margin: 8px 0;
     font-size: 14px;
   }
