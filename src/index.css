@@ -111,3 +111,42 @@ background: #d3b429;
 }
 
 
+@media screen and (max-width: 768px) {
+  .profile-card {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    min-width: unset;
+    object-fit: cover;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .profession {
+    font-size: 16px;
+  }
+
+  .tech-stack {
+    gap: 6px;
+    padding: 0 10px;
+  }
+
+  .tech-stack span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .buttons .btn {
+    width: 100%;
+    margin: 8px 0;
+    font-size: 14px;
+  }
+}
