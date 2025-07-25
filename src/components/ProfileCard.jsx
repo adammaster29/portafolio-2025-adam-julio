@@ -6,7 +6,8 @@ export default function ProfileCard({cambiarPagina}) {
    <div className="profile-card">
       <img src={profileImage} alt="Profile" className="profile-img" />
       <h1 className="name">Adam Agudelo</h1>
-      <p className="profession">Backend & Frontend Developer</p>
+      <p className="profession">Desarrollador Full Stack</p>
+      <p className="profession"> +2 años desarrollando sistemas robustos y escalables, orientados a resolver necesidades reales de negocio.</p>
 
       <div className="tech-stack">
         <span className='react'>React.js</span>
