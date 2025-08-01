@@ -3,7 +3,7 @@ import profileImage from '/img/perfiladam.png';
 
 export default function ProfileCard({cambiarPagina}) {
   return (
-   <div className="profile-card">
+   <div className="profile-card  animate__animated animate__backInDown">
       <img src={profileImage} alt="Profile" className="profile-img" />
       <h1 className="name">Adam Agudelo</h1>
       <p className="profession">Desarrollador Full Stack</p>
