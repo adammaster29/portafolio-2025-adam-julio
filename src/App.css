@@ -31,7 +31,7 @@ body {
 }
 
 .card {
-  background-color: #1f2937;
+    background-color: #1f293715;
   border: 1px solid #374151;
   border-radius: 16px;
   padding: 20px;
@@ -41,6 +41,7 @@ body {
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px #00e0ff44;
+    background-color: #1f2937;
 }
 
 .card-title {

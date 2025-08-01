@@ -66,7 +66,16 @@ const cambiarPagina = (num)=>{
   }, []);
 
   return (
-    <div className="portfolio-container">
+    <div className="portfolio-container  video-container">
+ <video autoPlay loop muted className="background-video">
+        <source src="/videos/fondo1.mp4" type="video/mp4" />
+      
+      </video>
+
+
+
+
+
       {/* primera pagina  perfil */}
       { paginas === 1 && (
         <ProfileCard cambiarPagina={cambiarPagina}/>
