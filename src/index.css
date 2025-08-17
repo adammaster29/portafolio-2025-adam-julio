@@ -57,6 +57,7 @@ text-decoration: none;
   border-radius: 12px;
   font-size: 14px;
 }
+
 .react{
     background: rgb(50, 82, 223);
 }
@@ -68,7 +69,8 @@ background: #d3b429;
 }
 .GitHub{
     background: #000;
-}
+   
+  }
 .SQLServer{
     background: #ffffff;
     color: red;

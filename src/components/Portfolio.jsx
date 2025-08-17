@@ -27,28 +27,28 @@ const fronted = [
     title: "Pokedex - Pokémon",
     description:
       "App con consumo de API de Pokémon, muestra detalles y lista de Pokémon.",
-    link: "https://pokedex-group.netlify.app/",
+    link: "https://pokemon-card-adam.netlify.app/",
     image: "/img/pokedex.png"
   },
   {
     title: "Clima - Weather App",
     description:
       "App del clima usando API externa. Consulta ciudad y obtiene temperatura.",
-    link: "https://wheather-app-adalberto.netlify.app/",
+    link: "https://app-clima-adam.netlify.app/",
     image: "/img/clima.png"
   },
   {
     title: "Blackjack - Juego 21",
     description:
       "Juego interactivo donde el usuario compite contra la máquina para acercarse a 21.",
-    link: "https://adam-blackjack.netlify.app/",
+    link: "https://blackjack-juego-adam.netlify.app/",
     image: "/img/blackjack.png"
   },
   {
     title: "Trivia -  preguntas",
     description:
       "Juego para adivinar respuestas correctas a preguntas aleatorias.",
-    link: "https://preguntasadam.netlify.app/",
+    link: "https://juego-preguntas-adam.netlify.app/",
     image: "/img/trivia.png"
   },
 ];
