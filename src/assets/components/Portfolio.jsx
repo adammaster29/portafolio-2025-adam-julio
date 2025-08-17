@@ -35,7 +35,7 @@ const fronted = [
     description:
       "App del clima usando API externa. Consulta ciudad y obtiene temperatura.",
     link: "https://app-clima-adam.netlify.app/",
-    image: "/img/clima.png"
+    image: "/img/clima.jpg"
   },
   {
     title: "Blackjack - Juego 21",
